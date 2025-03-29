@@ -10,7 +10,7 @@
 
   <img src="assets/number_generator_image.png" alt="Program Screenshot" />
 
-  <p>This program generates a list of numbers between a given <strong>start_number</strong> and <strong>end_number</strong>, and writes them to a file. Numbers are formatted with leading zeros to ensure they are exactly 8 digits long.</p>
+  <p>This program generates a list of numbers between a given <strong>start_number</strong> and <strong>end_number</strong>, formats them with leading zeros to ensure they are exactly 8 digits long, and writes them to a specified file.</p>
 
   <h2>📜 Table of Contents</h2>
   <ul>
@@ -27,14 +27,13 @@
   <hr />
 
   <h2 id="introduction">🌟 Introduction</h2>
-  <p>The <strong>Number Generator to File</strong> program is a simple C program that generates a sequence of numbers, formats them with leading zeros, and writes them to a specified file. The program accepts three arguments: the start number, the end number, and the name of the output file.</p>
-  <p>It validates the inputs and ensures the start number is less than the end number before proceeding with the generation.</p>
+  <p>The <strong>Number Generator to File</strong> program is a simple C program that generates a sequence of numbers, formats them with leading zeros, and writes them to a specified file. The program validates the inputs to ensure the start number is less than the end number and that both are valid positive integers.</p>
 
   <h2 id="features">✨ Features</h2>
   <ul>
     <li><strong>Number Formatting</strong>: Numbers are padded with leading zeros to be 8 digits long.</li>
-    <li><strong>Input Validation</strong>: The program checks for valid input (positive numbers) and ensures that the start number is smaller than the end number.</li>
-    <li><strong>File Output</strong>: The numbers are written to a specified file, allowing for easy sharing and storage.</li>
+    <li><strong>Input Validation</strong>: The program ensures that both the start and end numbers are positive integers and that the start number is smaller than the end number.</li>
+    <li><strong>File Output</strong>: The numbers are written to a specified file, allowing for easy storage and sharing.</li>
   </ul>
 
   <h2 id="installation">🛠 Installation</h2>
@@ -42,14 +41,14 @@
   <p>Before using this program, ensure the following are installed:</p>
   <ul>
     <li><strong>gcc</strong>: A C compiler (e.g., <code>gcc</code>).</li>
-    <li><strong>make</strong>: A build tool for compiling the program.</li>
   </ul>
 
   <h3>Clone the Repository</h3>
   <pre><code>git clone git@github.com:yourusername/number-generator.git
-cd number-generator</code></pre>
+cd number-generator
+gcc num_generator -o name_program Of your choice</code></pre>
 
-  <h2 id="usage">🎮 Usage</h2>
+  <h2 id="usage">⛏ Usage</h2>
   <p>The program takes 3 arguments:</p>
   <ul>
     <li><strong>start_number</strong>: The starting number for the sequence.</li>
@@ -57,12 +56,13 @@ cd number-generator</code></pre>
     <li><strong>file_name</strong>: The name of the file where the numbers will be written.</li>
   </ul>
   <p>Run the program like this:</p>
-  <pre><code>./number_generator &lt;start_number&gt; &lt;end_number&gt; &lt;file_name&gt;</code></pre>
+  <pre><code>gcc num_generator -o (name_program Of your choice)
+./name_program &lt;start_number&gt; &lt;end_number&gt; &lt;file_name&gt;</code></pre>
 
   <h2 id="example">📝 Example</h2>
   <h3>Running the Program:</h3>
   <p>If you want to generate numbers from <code>1</code> to <code>10</code> and save them in <code>output.txt</code>, run:</p>
-  <pre><code>./number_generator 1 10 output.txt</code></pre>
+  <pre><code>./name_program 1 10 output.txt</code></pre>
   <p>This will create the following content in <code>output.txt</code>:</p>
   <pre><code>00000001
 00000002
@@ -84,10 +84,7 @@ cd number-generator</code></pre>
   </ul>
 
   <h2 id="project-structure">📁 Project Structure</h2>
-  <pre><code>number-generator/
-├── src/                # Source files
-├── assets/             # Images or other assets
-├── Makefile            # Build system
+  <pre><code>└── number-generator
 └── README.md           # Project documentation</code></pre>
 
   <h2 id="license">📚 License</h2>
