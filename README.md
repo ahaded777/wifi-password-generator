@@ -41,7 +41,7 @@
   </ul>
 
   <h3>Clone the Repository</h3>
-  <pre><code>git clone git@github.com:yourusername/number-generator.git
+  <pre><code>git clone https://github.com/ahaded777/wifi-password-generator.git
 cd number-generator</code></pre>
 
   <h2 id="usage">⛏ Usage</h2>
