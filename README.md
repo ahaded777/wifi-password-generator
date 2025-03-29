@@ -84,7 +84,7 @@ cd number-generator</code></pre>
 └── README.md           # Project documentation</code></pre>
 
   <h2 id="license">📚 License</h2>
-  <p>This program is open-source and licensed under the MIT License.</p>
+  <p>This program is open-source.</p>
 
   <hr />
 
