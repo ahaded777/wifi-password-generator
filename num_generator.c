@@ -78,6 +78,11 @@ int check_valid_args(int *fd, char **args)
         ft_putstr_fd("Error: The start number must be greater than the end number.\n", 2);
         return (1);
     }
+    else if (count_num(atoi(args[2])) > 8)
+    {
+        ft_putstr_fd("Error: Number exceeds 8 digits.\n", 2);
+        return (1);
+    }
     return (0);
 }
 int main (int ac, char **av)
