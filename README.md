@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Generator to File</title>
 </head>
 <body>
   <h1>🖨️ Number Generator to File</h1>
-
-  <img src="assets/number_generator_image.png" alt="Program Screenshot" />
 
   <p>This program generates a list of numbers between a given <strong>start_number</strong> and <strong>end_number</strong>, formats them with leading zeros to ensure they are exactly 8 digits long, and writes them to a specified file.</p>
 
@@ -45,8 +42,7 @@
 
   <h3>Clone the Repository</h3>
   <pre><code>git clone git@github.com:yourusername/number-generator.git
-cd number-generator
-gcc num_generator -o name_program Of your choice</code></pre>
+cd number-generator</code></pre>
 
   <h2 id="usage">⛏ Usage</h2>
   <p>The program takes 3 arguments:</p>
